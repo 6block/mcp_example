@@ -41,7 +41,7 @@ async def get_alerts(state: str) -> str:
     Args:
         state: Two-letter US state code (e.g. CA, NY)
     """
-    url = f"{NWS_API_BASE}/alert/active/area/{state}"
+    url = f"{NWS_API_BASE}/alerts/active?area={state}"
     data = await make_nws_request(url)
 
     if not data or "features" not in data:
