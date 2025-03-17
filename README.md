@@ -1,3 +1,7 @@
+### mcp 样例代码
+https://modelcontextprotocol.io/quickstart/server
+https://modelcontextprotocol.io/quickstart/client
+
 ```shell
 # 运行测试
 python client.py main.py
